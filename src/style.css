@@ -180,6 +180,10 @@
     * {
         overflow-y: visible;
     }
+    
+    .nav a {
+        overflow: hidden;
+    }
 
     .text__xl {
         font-size: 125%;
