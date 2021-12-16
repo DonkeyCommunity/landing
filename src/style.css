@@ -1,0 +1,241 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Readex+Pro&display=swap');
+
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+/* texts style */
+.text__xl {
+    font-size: 150%;
+    font-family: 'Bakbak One', cursive;
+}
+
+.text__xxl {
+    font-size: 155%;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+/* container */
+.container {
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background: rgba(255, 255, 255, 0.486);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+
+/* line */
+.line {
+    background: rgb(16, 210, 235);
+    width: 8rem;
+    height: 2px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+/* badge */
+.badge {
+    background: rgb(16, 210, 235);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* background */
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* navbar */
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+/* logo */
+.nav .logo {
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    align-items: center;
+    color: white;
+}
+
+.logo .hero__text {
+    font-size: 2.2rem;
+}
+
+/* social__handle */
+.nav .social__handle {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    justify-content: space-evenly;
+}
+
+/* icons */
+.social__handle i {
+    color: white;
+}
+
+/* main */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 86vh;
+}
+
+/* hero__image */
+.main .hero__image {
+    display: block;
+    height: 25rem;
+    width: 30rem;
+    padding-left: 5rem;
+    opacity: 0.85;
+}
+
+/* intro */
+.main .intro {
+    left: 50rem;
+    bottom: 14rem;
+}
+
+/* about */
+.main .about {
+    right: 2rem;
+    bottom: 2rem;
+}
+
+/* media query */
+@media screen and (max-width: 1441px) {
+    /* intro */
+    .main .intro {
+        left: 46rem;
+        bottom: 14rem;
+    }
+
+    /* about */
+    .main .about {
+        right: 2rem;
+        bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    /* hero__image */
+    .main .hero__image {
+        display: none;
+    }
+
+    /* intro */
+    .main .intro {
+        left: 10rem;
+        bottom: 10rem;
+    }
+
+    /* about */
+    .main .about {
+        right: 10rem;
+        bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    /* intro */
+    .main .intro {
+        left: 2rem;
+        bottom: 10rem;
+    }
+
+    /* about */
+    .main .about {
+        right: 2rem;
+        bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    * {
+        overflow-y: visible;
+    }
+
+    .text__xl {
+        font-size: 125%;
+    }
+
+    .text__xxl {
+        font-size: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container {
+        width: 18rem;
+        height: 25rem;
+    }
+
+    /* intro */
+    .main .intro {
+        left: 5rem;
+        top: 8rem;
+    }
+
+    /* about */
+    .main .about {
+        left: 5rem;
+        top: 35rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    /* intro */
+    .main .intro {
+        left: 3rem;
+    }
+
+    /* about */
+    .main .about {
+        left: 3rem;
+    }   
+}
+
+@media screen and (max-width: 321px) {
+    .logo .hero__text {
+        font-size: 2rem;
+    }
+
+    /* intro */
+    .main .intro {
+        left: 1rem;
+    }
+
+    /* about */
+    .main .about {
+        left: 1rem;
+    }   
+}
